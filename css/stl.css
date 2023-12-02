@@ -1,0 +1,16 @@
+* {
+    /* padding: 0; */
+    margin: 100 auto;
+    display: contents;
+  }
+  canvas {
+    background-color: #0f0f0f;
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    display: block;
+    font-size:xx-large;
+    /* padding-left: 45%; */
+    text-align: center;
+  } 
