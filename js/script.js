@@ -1,3 +1,4 @@
+///////// USing 2D canvas ///////
 const canf = document.getElementById("my");
 const ctx = canf.getContext("2d")
 let rightMove = false
@@ -94,7 +95,7 @@ class bHole {
             for(let j = 0; j <40; j=j+2){
                 ctx.beginPath()
 //                ctx.arc(this.x,this.y, this.rad*(1+0.8*i), Math.PI * 2 * (j+Math.floor(alternator*i)+1)/40, Math.PI*2*(j+1+Math.floor(alternator*i)+1+ Math.floor(alternator))/40) 
-                ctx.arc(this.x,this.y, this.rad*(1+0.8*i), Math.PI * 2 * (j+i+1+Math.floor(alternator*(5-i)))/40, Math.PI*2*(j+1+i+1+ Math.floor(alternator*(5-i)))/40) /* i+1 term is to stagger the rings)*/
+                ctx.arc(this.x,this.y, this.rad*(1+0.8*i), Math.PI * 2 * (j+i+1+Math.floor(alternator*(5-i)))/40, Math.PI*2*(j+1+i+1+ Math.floor(alternator*(5-i)))/40) /* i+1 term is to stagger the rings. Alternator gives the rotation effect*/
                 ctx.strokeStyle = "rgb(255,255,255)"
     //           ctx.fillStyle = chk
                 ctx.stroke()
