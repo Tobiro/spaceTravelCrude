@@ -27,6 +27,8 @@ function sig(z){
     return 10/(1+Math.exp(-z+1))
 }
 
+
+
 // My classes
 
 class Star {
